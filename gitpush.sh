@@ -6,6 +6,4 @@ git add .
 
 git commit -m "change"
 
-git push ori 
-
 git push -u origin master
