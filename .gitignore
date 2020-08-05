@@ -1,0 +1,8 @@
+# projetname: SVJ Study
+
+
+# ignore .npy
+*.npy
+
+# ignore .out
+#.out

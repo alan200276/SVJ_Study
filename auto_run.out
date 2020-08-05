@@ -1,0 +1,10 @@
+Start Running
+i=1
+2020 Aug 08
+04:33:25 PM
+s-channel
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+2020 Aug 08
+04:41:07 PM
+sed: -e expression #1, char 1: unknown command: `-'
