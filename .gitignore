@@ -1,5 +1,8 @@
 # projetname: SVJ Study
 
+#ignore gitpush.sh
+
+gitpush.sh
 
 # ignore .npy
 *.npy
