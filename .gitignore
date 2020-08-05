@@ -2,7 +2,7 @@
 
 
 # ignore .npy
-#*.npy
+*.npy
 
 # ignore .out
 *.out
