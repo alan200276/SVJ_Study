@@ -5,4 +5,7 @@
 *.npy
 
 # ignore .out
-#.out
+*.out
+
+#ignore /.ipynb_checkpoints
+./.ipynb_checkpoints
