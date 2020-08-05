@@ -1,6 +1,6 @@
-git init 
+#git init 
 
-git remote add origin git@github.com:alan200276/SVJ_Study.git
+#git remote add origin git@github.com:alan200276/SVJ_Study.git
 
 git add .
 
