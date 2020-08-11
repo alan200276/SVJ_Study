@@ -1,0 +1,87 @@
+! 1) Settings used in the main program.
+
+Main:numberOfEvents = 20000         ! number of events to generate
+Main:timesAllowErrors = 3          ! how many aborts before run stops
+
+! 2) Settings related to output in init(), next() and stat().
+
+Init:showChangedSettings = on      ! list changed settings
+Init:showChangedParticleData = off ! list changed particle data
+Next:numberCount = 1000             ! print message every n events
+Next:numberShowInfo = 1            ! print event information n times
+Next:numberShowProcess = 1         ! print process record n times
+Next:numberShowEvent = 0           ! print event record n times
+
+
+
+
+! Matching
+!JetMatching:qCut         = 100
+!JetMatching:doShowerKt   = off
+!JetMatching:nJetMax      = 2
+!JetMatching:setMad=off
+!JetMatching:nQmatch=5
+!JetMatching:etaJetMax=5
+!JetMatching:coneRadius=1.0000000000e+00
+!JetMatching:merge=on
+!JetMatching:doVeto=off
+!JetMatching:scheme=1
+
+
+
+
+
+! Hidden Valley
+HiddenValley:Ngauge =2
+HiddenValley:nFlav =2
+HiddenValley:alphaOrder =0
+HiddenValley:Lambda = 1
+HiddenValley:alphaFSR = 1
+HiddenValley:spinFv = 0
+HiddenValley:FSR = on
+HiddenValley:fragment = on
+HiddenValley:pTminFSR = 1.1
+
+
+!Dark Particle setting
+4900101:m0 = 10.0
+4900101:mWidth = 0.2
+4900101:mMin = 9.8
+4900101:mMax = 10.2
+
+4900111:m0 = 20
+4900113:m0 = 20
+4900211:m0 = 9.99
+4900213:m0 = 9.99
+
+4900111:onechannel = 1 1 91 -3 3
+4900111:addchannel = 1 0 0 4900211 -4900211
+4900113:onechannel = 1 0.2 91 -1 1
+4900113:addchannel = 1 0.2 91 -2 2
+4900113:addchannel = 1 0.2 91 -3 3
+4900113:addchannel = 1 0.2 91 -4 4
+4900113:addchannel = 1 0.2 91 -5 5
+4900113:addchannel = 1 0 0 4900213 -4900213
+HiddenValley:probVector =  0.75
+
+
+
+
+!ignore these particle
+4900001:m0 = 50000
+4900002:m0 = 50000
+4900003:m0 = 50000
+4900004:m0 = 50000
+4900005:m0 = 50000
+4900006:m0 = 50000
+4900011:m0 = 50000
+4900012:m0 = 50000
+4900013:m0 = 50000
+4900014:m0 = 50000
+4900015:m0 = 50000
+4900016:m0 = 50000
+
+! 3) Set the input LHE file
+! Beams:setProductionScalesFromLHEF=on ! This parameter is automatically set to True by MG5aMC when doing MLM merging with PY8.
+Beams:frameType = 4
+Beams:LHEF = /home/Storage/MG5_Study_Group/sig_schannel_up2jets_wz_auto/Events/run_02/unweighted_events.lhe  
